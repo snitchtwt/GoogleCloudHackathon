@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+.App {
+  text-align: center;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+.head {
+  font-size: 5em;
+  font-family: 'Bebas Neue';
+  color: aliceblue;
+}
+
+.box{
+  justify-items: center;
+}
+
+.navbar{
+  background-color: aliceblue;
+  overflow: hidden;
+  border-radius: 12px;
+  display: inline-flex;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+  margin-left: 2em;
+  margin-right: 2rem;
+}
+
+.navbar button {
+  justify-content: center;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  padding: 14px 14px;
+  border-radius: 12px;
+  font-family: 'Fira Sans', sans-serif;
+  background-color: aliceblue;
+  border: none;
+}
+
+.navbar button:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  cursor: pointer;
+  
+}
+
+.form{
+  margin-top: 1em;
+  background-color: aliceblue;
+  padding-top: 1em;
+  padding: 14px 14px;
+  border-radius: 12px;
+}
+
+input{
+  background-color: aliceblue;
+  font-family: 'Fira Sans', sans-serif;
+  width: 50%;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgb(0, 0, 0);
+  padding: 5px 5px;
+}
+
+.CurrentTodo{
+  margin-top: 1em;
+  font-family: 'Fira Sans', sans-serif;
+  background-color: aliceblue;
+  overflow: hidden;
+  border-radius: 12px;
+  padding: 14px 14px;
+}
+.llistt{
+  list-style: none;
+  background-color: rgb(213, 218, 223);
+  padding: 14px 14px;
+  border-radius: 12px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  overflow-x: hidden;
+  overflow-wrap: break-word;  
+  word-wrap: break-word; 
+  word-break: break-word;
+  text-align: left;
+  margin-right: 2em;
+}
+.spam{
+  max-width: 60%;
+  cursor: pointer;
+  margin-right: 1cm;
+}
+.spam:hover{
+  text-decoration: underline;
+}
+
+.icon{
+  float: right;
+}
+
+.Trash{ 
+  cursor: pointer;
+  padding: 8px 10px;
+  justify-content: end;
+  background-color: aliceblue;
+  border-radius: 12px;
+  margin-right: 2em;
+}
+.Trash:hover{
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+
+.Edit{
+  cursor: pointer;
+  padding: 8px 10px;
+  margin-right: 2em;
+  justify-content: end;
+  background-color: aliceblue;
+  border-radius: 12px;
+}
+.Edit:hover{
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+article{
+  display: grid;
+}
+
+.edit-todo{
+  width: 85%;
+  font-family: 'Fira Sans', sans-serif;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+
+.button {
+  margin: 0 10px;
+  padding: 10px;
+  font-size: 14px;
+  color: #6c6777;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  width: 100px;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+.button.selected {
+  color: #FFF;
+  background-color: #6c6777;
+}
+
+.button.clear {
+  float: right;
+  color: #FFF;
+  background-color: #ee1630;
+  width: 170px;
+}
