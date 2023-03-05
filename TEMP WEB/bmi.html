@@ -5,12 +5,123 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BMI calculater</title>
-</head>
-<body>
-    <section class="section bmi" id="body" aria-label="tracker">
-        <div class="container">
-            <h1 class="h1 bmi">Your BMI</h1>
-        </div>
-    </section>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GFG_Team</title>
+  
+    <!-- 
+      - favicon
+    -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  
+    <!-- 
+      - custom css link
+    -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+  
+    <!-- 
+      - google font link
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Catamaran:wght@600;700;800;900&family=Rubik:wght@400;500;800&display=swap"
+      rel="stylesheet">
+  
+    <!-- 
+      - preload images
+    -->
+    <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+    <link rel="preload" as="image" href="./assets/images/hero-circle-one.png">
+    <link rel="preload" as="image" href="./assets/images/hero-circle-two.png">
+    <link rel="preload" as="image" href="./assets/images/heart-rate.svg">
+    <link rel="preload" as="image" href="./assets/images/calories.svg">
+  
+  </head>
+  
+  <body id="top">
+  
+    <!-- 
+      - #HEADER
+    -->
+  
+    <header class="header" data-header>
+      <div class="container">
+  
+        <a href="#" class="logo">
+          <ion-icon name="barbell-sharp" aria-hidden="true"></ion-icon>
+  
+          <span class="span">GFG_Team</span>
+        </a>
+
+        <a href="#" class="btn btn-secondary">Join Now</a>
+  
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </button>
+  
+      </div>
+    </header>
+
+
+    <main>
+        <article>
+    
+          <!-- 
+            - #HERO
+          -->
+    
+          <section class="section hero bg-dark has-after has-bg-image" id="home" aria-label="hero" data-section
+            style="background-image: url('./assets/images/hero-bg.png')">
+            <div class="container">
+    
+              <div class="hero-content">
+    
+                <p class="hero-subtitle">
+                  <strong class="strong">calculater</strong>Your BMI
+                </p><br>
+                <div class="btn btn-primary">Enter Your Weight:
+                <input type="value" class="weight">
+                </div><br>
+
+                <div class="btn btn-primary">
+                    Enter Your height:
+                <input type="value" class="height">
+                </div><br>
+
+                <div class="btn btn-primary">
+                    Your BMI:
+                </div>
+
+               
+
+                
+    
+                <p class="section-text">
+                </p><br>
+    
+                <a href="#" class="btn btn-secondary">Get Started</a>
+    
+              </div>
+    
+              <div class="hero-banner">
+    
+                <img src="./assets/images/hero-banner.png" width="660" height="753" alt="hero banner" class="w-100">
+    
+                <img src="./assets/images/hero-circle-one.png" width="666" height="666" aria-hidden="true" alt=""
+                  class="circle circle-1">
+                <img src="./assets/images/hero-circle-two.png" width="666" height="666" aria-hidden="true" alt=""
+                  class="circle circle-2">
+
+    
+              </div>
+    
+            </div>
+          </section>
+    
+  
 </body>
 </html>
