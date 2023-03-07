@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chatbot History</title>
+</head>
+<body>
+    <h1>Chatbot History</h1>
+    <table>
+        <tr>
+            <th>User Input</th>
+            <th>Bot Response</th>
+        </tr>
+        {% for conversation in conversations %}
+        <tr>
+            <td>{{ conversation.user_input }}</td>
+            <td>{{ conversation.bot_response }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
