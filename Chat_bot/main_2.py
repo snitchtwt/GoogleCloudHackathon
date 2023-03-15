@@ -83,6 +83,7 @@ else:
     model.fit(training, output, n_epoch=1000, batch_size=8, show_metric=True)
     model.save("model.tflearn")
 
+
 def bag_of_words(s, words):
     bag = [0 for _ in range(len(words))]
 
@@ -97,25 +98,41 @@ def bag_of_words(s, words):
     return np.array(bag)
 
 
-def chat():
-    print("Start talking with the bot! (type quit to stop)")
-    while True:
-        inp = input("You: ")
-        if inp.lower() == "quit":
-            break
+from flask import Flask, render_template, request
+import os
 
-        result = model.predict([bag_of_words(inp, words)])[0]
-        result_index = np.argmax(result)
-        tag = labels[result_index]
+app = Flask(__name__)
 
-        if result[result_index] > 0.7:
-            for tg in data["intents"]:
-                if tg['tag'] == tag:
-                    responses = tg['responses']
-            print(random.choice(responses))
+@app.route('/')
+def index():
+    return render_template('index2.html')
 
-        else:
-            print("I didnt get that. Can you explain or try again.")
+@app.route('/process',methods=['POST'])
+def process():
+
+    user_input = request.form['messageText'].encode('utf-8').strip()
+
+    inp = user_input
+
+    result = model.predict([bag_of_words(inp, words)])[0]
+    result_index = np.argmax(result)
+    tag = labels[result_index]
+
+    if result[result_index] > 0.7:
+        for tg in data["intents"]:
+          if tg['tag'] == tag:
+              responses = tg['responses']
+                
+        bot_response=random.choice(responses)
+        print(bot_response)
+    else:
+        bot_response = "I didnt get that. Can you explain or try again."
+        print(bot_response)
+
+    return render_template('index2.html',user_input=user_input, bot_response=bot_response)
 
 
-chat()
+        
+
+if __name__ == '__main__':
+    app.run(debug=True)
