@@ -5,3 +5,4 @@ Chat_bot/model.tflearn.data-00000-of-00001
 Chat_bot/model.tflearn.index
 Chat_bot/model.tflearn.meta
 Chat_bot/req.txt
+*.DS_Store
