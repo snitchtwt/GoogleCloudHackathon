@@ -238,6 +238,11 @@ body {
   box-shadow: var(--shadow-2);
 }
 
+.btn-bmi{
+  background-color: var(--coquelicot);
+  color: var(--white);
+}
+
 .btn-secondary {
   background-color: var(--white);
   color: var(--coquelicot);
@@ -273,6 +278,11 @@ body {
   text-transform: uppercase;
   max-width: max-content;
 }
+
+.section-subtitle1{background-color: var(--coquelicot_10);
+  color: var(--white);
+  padding: 8px 20px;
+  border-radius: var(--radius-8);}
 
 .section-subtitle {
   background-color: var(--coquelicot_10);
@@ -960,7 +970,7 @@ body {
  * responsive for larger than 575px screen
  */
 
-@media (min-width: 575px) {
+@media screen and (min-width: 500px) {
 
   /**
    * CUSTOM PROPERTY
@@ -1071,7 +1081,7 @@ body {
  * responsive for larger than 768px screen
  */
 
-@media (min-width: 768px) {
+@media screen and (min-width: 700px) {
 
   /**
    * CUSTOM PROPERTY
@@ -1137,7 +1147,7 @@ body {
  * responsive for larger than 992px screen
  */
 
-@media (min-width: 992px) {
+@media (min-width: 900px) {
 
   /**
    * REUSED STYLE
