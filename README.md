@@ -9,6 +9,8 @@ This is a web application that provides fitness-related resources, such as worko
 * Progress tracking  
 * Community features such as social sharing and commenting  
 * Integration with wearable devices, fitness apps, and other fitness-related services  
+* Easy to use AI Chat bot used aimed to help our customers to get a personalized fitness pal from which who can help with diet plan and workout plans.
+* Machine learning model to get future results for your fitness journey
 
 ## Technologies Used
 * React (JavaScript library for building user interfaces)  
@@ -16,6 +18,12 @@ This is a web application that provides fitness-related resources, such as worko
 * Express.js (web application framework for Node.js)  
 * MongoDB (NoSQL document database)  
 * Google Cloud Platform (cloud computing services)    
+* Python Dependencies 
+  * Flask
+  * Pandas
+  * Sklearn
+  * OpenAi
+  * CSV
 
 # Getting Started
 To run the application, you will need to have Node.js and MongoDB installed on your machine. You will also need to set up a Google Cloud account and configure the necessary services, such as Cloud Storage and Cloud Firestore.
